@@ -1,0 +1,11 @@
+{
+  "name": "I-Teeth: Oral Diagnosis Form Auto-Fill Prototype",
+  "description": "Digitize dental oral diagnosis forms using Gemini AI vision, visual region cropping for odontograms and consent signatures, and clinical note voice dictation.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

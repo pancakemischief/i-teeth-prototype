@@ -5,7 +5,9 @@ export function startBrowserDictation(onResultCallback, onErrorCallback) {
   const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   
   if (!SpeechRecognition) {
-    alert("Speech recognition is not supported in this browser. Please open in Google Chrome.");
+    if (onErrorCallback) {
+      onErrorCallback(new Error("Speech recognition is not supported in this browser. Please open in Google Chrome."));
+    }
     return null;
   }
 
